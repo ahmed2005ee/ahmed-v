@@ -3,10 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي</title>
+    <title>النصائح الطبية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            position: relative;
+        }
+        h2 {
+            color: #4caf50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .animation-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .stethoscope {
+            width: 100px;
+            height: 100px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>مرحبًا بك في موقعي!</h1>
-    <p>هذه صفحة ويب بسيطة باستخدام GitHub Pages.</p>
+    <header>
+        <h1>النصائح الطبية اليومية</h1>
+    </header>
+    <main>
+        <h2>محتويات طبية</h2>
+        <p>مرحبًا بك في صفحتنا الطبية التي تهدف إلى تعزيز صحتك من خلال نصائح ومعلومات طبية موثوقة.</p>
+
+        <div class="animation-container">
+            <!-- شكل سماعة طبية SVG -->
+            <svg class="stethoscope" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4caf50">
+                <path d="M9 2a1 1 0 0 0-1 1v7a5.002 5.002 0 0 0 3 4.584V17a5 5 0 1 0 10 0v-2.037a3.503 3.503 0 1 0-2 0V17a3 3 0 1 1-6 0v-2.416A5.002 5.002 0 0 0 16 10V3a1 1 0 1 0-2 0v7a3 3 0 1 1-6 0V3a1 1 0 0 0-1-1zM19.5 13a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/>
+            </svg>
+        </div>
+
+        <h2>نصائح صحية</h2>
+        <ul>
+            <li>اشرب 8 أكواب من الماء يوميًا للحفاظ على ترطيب جسمك.</li>
+            <li>مارس الرياضة بانتظام لمدة 30 دقيقة على الأقل يوميًا.</li>
+            <li>احرص على تناول وجبات متوازنة تحتوي على الفواكه والخضروات.</li>
+            <li>خذ قسطًا كافيًا من النوم (7-8 ساعات يوميًا).</li>
+            <li>قم بغسل يديك بالماء والصابون بانتظام لتجنب انتقال العدوى.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 النصائح الطبية اليومية | جميع الحقوق محفوظة</p>
+    </footer>
 </body>
 </html>
